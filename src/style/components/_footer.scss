@@ -1,0 +1,17 @@
+footer {
+  width: 100%;
+  color: $color-2;
+  background-color: $color-3;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  img {
+    display: block;
+    margin: 40px auto 30px;
+  }
+
+  p {
+    margin: 20px;
+  }
+}
