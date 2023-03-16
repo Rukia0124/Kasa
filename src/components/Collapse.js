@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Collapse({ title, description }) {
+function Collapse({ title, desc }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -18,7 +18,7 @@ function Collapse({ title, description }) {
           )}
         </span>
       </div>
-      {open && <div className="description-collapse">{description}</div>}
+      {open && <div className="description-collapse">{desc}</div>}
     </div>
   );
 }
