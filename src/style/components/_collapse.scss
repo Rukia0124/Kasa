@@ -1,0 +1,32 @@
+.collapse {
+  margin: 20px;
+
+  .header-collapse {
+    position: relative;
+  }
+
+  .title-collapse {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 24px;
+    color: $color-2;
+    background-color: $color-1;
+  }
+
+  span {
+    color: $color-2;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px;
+  }
+
+  .description-collapse {
+    background-color: $color-4;
+    color: $color-1;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px;
+  }
+}

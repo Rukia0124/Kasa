@@ -6,7 +6,8 @@ footer {
   display: flex;
   justify-content: center;
   bottom: 0;
-
+  position: absolute;
+  transform: translateY(100%);
 
   img {
     display: block;

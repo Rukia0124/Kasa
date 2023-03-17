@@ -1,0 +1,57 @@
+.infos {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: $color-1;
+
+  .housing-infos {
+    color: $color-1;
+    padding: 10px;
+    margin: 40px 0;
+
+    h2 {
+      font-size: 36px;
+      line-height: 2;
+    }
+  }
+
+  .host-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    right: 0;
+
+
+    .host {
+      display: flex;
+      text-align: end;
+
+      p {
+        margin: auto 5px;
+      }
+
+      img {
+        width: 64px;
+        border-radius: 50px;
+        margin: 40px 20px;
+      }
+    }
+  }
+
+  .fiche-collapse {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    .collapse {
+      width: 46% !important;
+    }
+
+  }
+
+}

@@ -27,3 +27,9 @@ $color-5: #000000a6;
     background: $color-2;
   }
 }
+
+body {
+  padding-bottom: 10px;
+  position: relative;
+  min-height: 100vh;
+}

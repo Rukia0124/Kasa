@@ -16,20 +16,42 @@ const FicheLogement = () => {
       <Navigation />
       <Carousel />
       <div className="infos">
-        <h2>{fiche.title}</h2>
-        <p className="location">{fiche.location}</p>
-        <div className="host">
-          <p>{fiche.host.name}</p>
-          <img
-            src={fiche.host.picture}
-            alt={"Photo de" + fiche.host.name}
-          ></img>
+        <div className="housing-infos">
+          <h2>{fiche.title}</h2>
+          <p className="location">{fiche.location}</p>
+        </div>
+        <div className="host-infos">
+          <div className="host">
+            <p>
+              {fiche.host.name.split(" ").map((name, index) => (
+                <React.Fragment key={index}>
+                  {name}
+                  <br />
+                </React.Fragment>
+              ))}
+            </p>
+            <img
+              src={fiche.host.picture}
+              alt={"Photo de" + fiche.host.name}
+            ></img>
+          </div>
+          <Rating rate={fiche.rating} />
         </div>
         <Tags />
-        <Rating rate={fiche.rating} />
+        <div className="fiche-collapse">
+          <Collapse title={"Description"} desc={fiche.description} />
+          <Collapse
+            title={"Equipement"}
+            desc={
+              <ul>
+                {fiche.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            }
+          />
+        </div>
       </div>
-      <Collapse title={"Description"} desc={fiche.description} />
-      <Collapse title={"Equipement"} desc={fiche.equipments} />
 
       <Footer />
     </div>
