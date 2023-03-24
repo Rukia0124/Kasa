@@ -2,15 +2,15 @@ import React from "react";
 import Collapse from "../components/Collapse";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import data from "../data/data.json";
+import DataService from "../data/Service";
 import { useParams } from "react-router-dom";
 import Tags from "../components/Tags";
 import Carousel from "../components/Carousel";
 import Rating from "../components/Rating";
 
 const FicheLogement = () => {
-  const id = useParams();
-  const fiche = data.find((data) => data.id === id.id);
+  const { id } = useParams();
+  const fiche = DataService.getDataById(id);
   return (
     <div>
       <Navigation />
@@ -20,6 +20,7 @@ const FicheLogement = () => {
           <h2>{fiche.title}</h2>
           <p className="location">{fiche.location}</p>
         </div>
+        <Tags />
         <div className="host-infos">
           <div className="host">
             <p>
@@ -37,7 +38,6 @@ const FicheLogement = () => {
           </div>
           <Rating rate={fiche.rating} />
         </div>
-        <Tags />
         <div className="fiche-collapse">
           <Collapse title={"Description"} desc={fiche.description} />
           <Collapse

@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 @font-face {
   font-family: "font-1";
-  src: "Montserrat", Arial, sans-serif;
+  src: "Montserrat", sans-serif;
 }
 
-$font-1: "font-1",
+$font-1: "Montserrat",
 sans-serif;
 
 $color-1: #ff6060;
@@ -32,4 +34,6 @@ body {
   padding-bottom: 10px;
   position: relative;
   min-height: 100vh;
+  font-family: $font-1;
+  overflow-x: hidden;
 }

@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: flex-end;
 
-    li {
+    a {
       color: $color-1;
       margin-left: 60px;
     }
@@ -22,6 +22,34 @@
     a.active {
       text-decoration: underline;
       color: $color-1;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    font-size: 12px;
+    margin: 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+
+    img {
+      height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .navigation {
+    font-size: 12px;
+    text-transform: uppercase;
+
+    ul {
+      margin: 10px 0;
+
+      a {
+        margin: 0 0 0 10px;
+      }
     }
   }
 }

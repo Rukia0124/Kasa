@@ -1,10 +1,14 @@
 .tags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+
   .tag {
     background-color: $color-1;
     padding: 10px;
     color: $color-2;
     border-radius: 10px;
-    margin: 20px;
+    margin: 10px;
     padding: 10px 40px;
   }
 }

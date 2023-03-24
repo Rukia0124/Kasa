@@ -36,3 +36,15 @@
   margin-right: 20px;
   position: absolute;
 }
+
+@media screen and (max-width:1400px) {
+  .card {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .card {
+    height: 200px;
+  }
+}

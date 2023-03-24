@@ -1,5 +1,6 @@
 .accueil {
   margin: 0 100px 20px;
+  display: flex;
 
   .liste-datas {
     background-color: $color-4;
@@ -8,5 +9,31 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px 60px;
     padding: 55px 50px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .accueil {
+
+    .liste-datas {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px 40px;
+      padding: 35px 20px;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .accueil {
+    width: 100%;
+    margin: 0;
+
+    .liste-datas {
+      background-color: $color-2;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+    }
   }
 }
