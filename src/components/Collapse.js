@@ -12,9 +12,9 @@ function Collapse({ title, desc }) {
           onClick={() => setOpen(!open)}
         >
           {!open ? (
-            <i class="fa-solid fa-chevron-down"></i>
+            <i className="fa-solid fa-chevron-down"></i>
           ) : (
-            <i class="fa-solid fa-chevron-up"></i>
+            <i className="fa-solid fa-chevron-up"></i>
           )}
         </span>
       </div>

@@ -3,7 +3,7 @@ import Collapse from "../components/Collapse";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import DataService from "../data/Service";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Tags from "../components/Tags";
 import Carousel from "../components/Carousel";
 import Rating from "../components/Rating";
@@ -11,6 +11,9 @@ import Rating from "../components/Rating";
 const FicheLogement = () => {
   const { id } = useParams();
   const fiche = DataService.getDataById(id);
+  if (!fiche) {
+    return <Navigate to="*" />;
+  }
   return (
     <div>
       <Navigation />

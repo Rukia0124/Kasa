@@ -21,10 +21,10 @@ const Carousel = () => {
       <img src={images[currentImage]} alt={fiche.title} />
       <div className="carousel-controls">
         <button onClick={handlePrev}>
-          <i class="fa-solid fa-chevron-left"></i>
+          <i className="fa-solid fa-chevron-left"></i>
         </button>
         <button onClick={handleNext}>
-          <i class="fa-solid fa-chevron-right"></i>
+          <i className="fa-solid fa-chevron-right"></i>
         </button>
       </div>
     </div>

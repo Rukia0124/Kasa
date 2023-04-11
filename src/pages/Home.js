@@ -10,7 +10,7 @@ import BannerImg from "../assets/img/banner1.png";
 const Home = () => {
   const data = DataService.getAllData();
   return (
-    <div>
+    <>
       <Navigation />
       <Banner txt={"Chez vous, partout et ailleurs"} img={BannerImg} />
       <section className="accueil">
@@ -28,7 +28,7 @@ const Home = () => {
         </div>
       </section>
       <Footer />
-    </div>
+    </>
   );
 };
 
